@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking de Motel</title>
+    <link rel="stylesheet" href="Booking.css">
+</head>
+<body>
+    <header>
+        <h1>Booking de Motel</h1>
+        <p>Bienvenido,Espero la pase genial en su estancia aqui.</p>
+    </header>
+
+    <main>
+        <section id="Booking">
+            <h2>Booking de Motel</h2>
+            <div class="carousel">
+                <button class="carousel-button prev" onclick="previmage()">
+                    &#10094;
+                </button>
+            </div class="carousel-images">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/2d/4e/57/ce/caption.jpg"
+            alt=""
+            class="carousel-image active"
+            />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStYrN1bpYEiT4cDr1d1GVyAt3UiedXS5PN_Q&s"
+            alt=""
+            class="carousel-image"
+            />
+            <img src="https://caracol.com.co/resizer/v2/YR6WCS355FJM3EO4LBNEGBSGGA.jpg?auth=4118d264b993fe4c7c920d5269446f2270e83cba629fb50b35a2e1fd0d323565&width=650&height=488&quality=70&smart=true"
+            alt=""
+            class="carousel-image"
+            />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiH6htgO_As6oB2FpAQrN8PMuQ4TF--95scw&s"
+            alt=""
+            class="carousel-image"
+            />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmpN9I5tPZ38fpvIGSF75DiXMQaObt02HYVw&s"
+            alt=""
+            class="carousel-image"
+            />
+            </div>
+            <button class="carousel-button next" onclick="nextimage()">
+                &#10095;
+            </button>
+            <button onclick="toggleinfo('Booking de Motel')">
+                Mostrar/Ocultar informacion
+            </button>
+            <p>El Booking de Motel es conocido por sus hermosas habitaciones y su excelente servicio.</p>
+        </section>
+
+        <section id="Motel Nacional">
+            <h2>Motel Nacional de colombia</h2>
+            <button onclick="toggleinfo('Motel-Valle')">
+                Mostrar/Ocultar informacion
+            </button>
+            <p>El Motel de valledupar es el mas exotico que podras encontrar.</p>
+        </section>
+    </main>
+
+    <button onclick="toggleTheme()">Cambiar Tema</button>
+
+    <script src="Booking.js"></script>
+
+</body>
+</html>
